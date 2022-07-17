@@ -1,5 +1,10 @@
+import Header from '../components/Header';
+
 export default function Projects() {
   return (
-    <div>Projects</div>
+    <main>
+      <Header />
+      <div>Projects page</div>
+    </main>
   );
 }
