@@ -8,8 +8,16 @@ function App() {
   return (
     <Routes>
       <Route path="/" element={<Home />} />
-      <Route path="/contact" element={<Contact />} />
-      <Route path="/projects" element={<Projects />} />
+      <Route path="contact" element={<Contact />} />
+      <Route path="projects" element={<Projects />} />
+      <Route
+        path="*"
+        element={(
+          <main style={{ padding: '1rem' }}>
+            <p>There&apos;s nothing here!</p>
+          </main>
+      )}
+      />
     </Routes>
   );
 }
